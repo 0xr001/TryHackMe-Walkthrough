@@ -1,2 +1,2 @@
 # TryHackMe-Walkthrough
-My TryHackMe Walkthroughs
+My All TryHackMe Walkthrough
