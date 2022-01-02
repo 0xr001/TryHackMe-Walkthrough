@@ -4,11 +4,7 @@
 
 This repository contains a few of my writeups I made of the TryHackMe CTF (Capture The Flag) challenges.
 
-Here's a link to my profile on TryHackMe:
-
-![badge](https://tryhackme.com/badge/494960 "badge")
-
-**TryHackMe Profile : **  [0xr001](https://tryhackme.com/p/0xr001)
+**TryHackMe Profile :** [0xr001](https://tryhackme.com/p/0xr001)
 
 The folder names are the names of the Challenges. Every folder is containing a **README.md** file with the Walkthrough in it. It also includes any file ,logs, scans etc. in the subfolder which belongs to the challenge. Click on the desired Folder and Get Hacking.
 
