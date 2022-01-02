@@ -5,6 +5,16 @@ The Room Link :- [Phishing Emails 1](https://tryhackme.com/room/phishingemails1t
 
 ![Room Logo ](images/room-logo.png "Room Logo")
 
+## Table of Contents
+
+- [Introduction](#Task-1---Introduction)
+- [The Email Address](#Task-2---The-Email-Address)
+- [Email Delivery](#Task-3---Email-Delivery)
+- [Email Headers](#Task-4---Email-Headers)
+- [Email Body](#Task-5---Email-Body)
+- [Type of Phishing](#Task-6---Type-Of-Phishing)
+- [Conclusion](#Task-7---Conclusion)
+
 ## Task 1 - Introduction
 
 Spam and Phishing are common social engineering attacks. In social engineering, phishing attack vectors can be a phone call, a text message, or an email. As you should have already guessed, our focus is on email as the attack vector.
