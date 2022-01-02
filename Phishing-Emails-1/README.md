@@ -3,7 +3,7 @@
 The Room Link :- [Phishing Emails 1](https://tryhackme.com/room/phishingemails1tryoe)
 
 
-![Room Logo ](https://tryhackme-images.s3.amazonaws.com/room-icons/f9eb29940c6bb7bacd2f414475b4059e.png "Room Logo")
+![Room Logo ](images/room-logo.png "Room Logo")
 
 ## Task 1 - Introduction
 
