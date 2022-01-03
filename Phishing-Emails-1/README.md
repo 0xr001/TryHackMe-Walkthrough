@@ -308,8 +308,10 @@ Understand the pertinent information we should obtain from an email we're analyz
 Some common techniques attackers use in spam and phishing email campaigns.
 In the upcoming Phishing Analysis series, we'll look at samples of various common techniques used in phishing email campaigns, along with tools to assist us with analyzing an email header and email body. 
 
-### Answer The Questions Below
 
+The next room in this module: [Phishing Emails 2](https://github.com/0xr001/TryHackMe-Walkthrough/tree/master/Phishing-Emails-2)
+
+### Answer The Questions Below
 
 What is BEC?
 ```markdown
