@@ -162,7 +162,7 @@ Both DomainKeys and DKIM were published in May 2007, DomainKeys as an "historica
 
 **Finding the Original Sender:** The easiest way for finding the original sender is by looking for the *X-Originating-IP* header. This header is *important* since it tells you the *IP address* of the computer that had sent the email. If you cannot find the *X-Originating-IP* header, then you will have to sift through the Received headers to find the sender's IP address.
 
-Once the email sender's *IP address* is found, you can search for it at [http://www.arin.net/](http://www.arin.net/). You should now be given results letting you know to which ISP (Internet Service Provider) or webhost the *IP address* belongs. Now, if you are tracking a spam email, you can send a complaint to the owner of the originating IP address. Be sure to include all the headers of the email when filing a complaint.
+Once the email sender's *IP address* is found, you can search for it at [http://www.arin.net/](http://www.arin.net/). You should now be given results letting you know to which ISP (Internet Service Provider) or web-host the *IP address* belongs. Now, if you are tracking a spam email, you can send a complaint to the owner of the originating IP address. Be sure to include all the headers of the email when filing a complaint.
 
 ### Answer The Questions Below
 
@@ -186,7 +186,7 @@ HTML is what makes it possible to add these elements to an email.
 
 The email can contain an image and embedded hyperlinks.
 
-You can view and block the images & embedded hyperlinks in webmail clients by looking at its settings. 
+You can view and block the images & embedded hyperlinks in web-mail clients by looking at its settings. 
 
 as We can see it in below image 
 
@@ -200,11 +200,11 @@ The email attachment is a PDF document.
 
 ![](images/email-with-atteachment.png)
 
-We have already given one attechment on the TryHackMe machine called `email2.txt` for analysis so let's analyze it.
+We have already given one attachment on the TryHackMe machine called `email2.txt` for analysis so let's analyze it.
 
 so Let's first open up the [CyberChef - The Cyber Swiss Army Knife](https://gchq.github.io/CyberChef/)
 
-and input the contents of the `email2.txt` after removing the header and futter 
+and input the contents of the `email2.txt` after removing the header and footer 
 
 ![](images/header.png)
 ![](images/futter.png)
@@ -215,11 +215,11 @@ and apply the Recipe "From Base64" to decode the pdf file and then download it
 
 #### If You Want to Do It With Terminal
 
-Step: 1 - first remove the file header and and futter as shown in above images using your favorite command line text editor, for me it did it with `vim`.
+Step: 1 - first remove the file header and and footer as shown in above images using your favorite command-line text-editor, for me it did it with `vim`.
 ```bash
 ~$ vim email2.txt 
 ```
-Step: 2 - decode it with bewlow command pipe it in `output.pdf` file.
+Step: 2 - decode it with below command pipe it in `output.pdf` file.
 ```bash
 ~$ cat email2.txt | base64 -d > output.pdf
 ```
@@ -247,13 +247,13 @@ THM{this-is-demo-flag}
 
 Now the best way to analyze the `.eml` file is to open it in any offline email client.
 
-For me I have opend it in `thunderbird` and I got this
+For me, I have opened it in `thunderbird` and I got this.
 
 ![](images/thunderbird.png)
 
-From the picture I can quicky find the sender Name, Email, Subject etc. information and can easily see the hyperlinks by hover over my cursor there and copy it by right clicking and select `Copy Link Location`.
+I can quickly find the sender Name, Email, Subject etc. information from the picture and can easily see the hyperlinks by hover over the cursor over there and copy it by right clicking and select `Copy Link Location`.
 
-NOTE :- We can see this information by open it in any text editor but we need to decode some information from base64 but any email client does it by default and directly shows the output . which is easier to analyze `.eml` file but for more detailed information we have to look at raw `.eml` file.  
+NOTE :- We can see this information by open it in any text editor but we need to decode some information from base64 but any email client does it by default and directly show us the output . which is easier to analyze `.eml` file but for more detailed information we have to look at raw `.eml` file.  
 
 ### Email Security – Defanging URLs
 
